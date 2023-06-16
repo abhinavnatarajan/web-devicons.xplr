@@ -41,10 +41,14 @@ All you have to do is override your default [table
 renderer][xplr-table-renderer] like this (inside `init.lua`):
 
 ```lua
+xplr.fn.custom.table_row_cols_1 = function(m)
+  return require("web-devicons").table_col_path(m)
+end
+
 xplr.config.general.table.row.cols = {
   -- keep the other default columns intact
   { format = "builtin.fmt_general_table_row_cols_0" }
-  { format = require("web-devicons").table_col_path }
+  { format = "custom.table_row_cols_1" }
   { format = "builtin.fmt_general_table_row_cols_2" }
   { format = "builtin.fmt_general_table_row_cols_3" }
   { format = "builtin.fmt_general_table_row_cols_4" }
