@@ -1,4 +1,4 @@
-local function setup
+local function setup()
     local xplr = xplr
     local icons = require("web-devicons.utils.icons")
 
@@ -52,6 +52,6 @@ end
 
 
 return {
-    setup = setup
-    table_col_path = table_col_path
+    setup = setup,
+    table_col_path = table_col_path,
 }
