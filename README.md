@@ -3,6 +3,8 @@
 A plugin for [xplr][xplr] that introduces all the
 [nvim-web-devicons][nvim-web-devicons] with optional theming.
 
+![Demo image](assets/demo.png)
+
 
 ## Requirements
 
