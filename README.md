@@ -63,4 +63,3 @@ xplr.config.general.table.row.cols = {
 [nvim-web-devicons]: https://github.com/nvim-tree/nvim-web-devicons
 [nvim-tree]: https://github.com/nvim-tree/nvim-tree.lua
 [xpm]: https://github.com/dtomvan/xpm.xplr
->>>>>>> ac0c822 (Initial commit)
