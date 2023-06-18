@@ -1,7 +1,17 @@
 # xplr web-devicons reimplementation
 
+<!--toc:start-->
+- [xplr web-devicons reimplementation](#xplr-web-devicons-reimplementation)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+    - [Install with [xpm][xpm]](#install-with-xpmxpm)
+    - [Install manually](#install-manually)
+  - [Features](#features)
+  - [Overriding icon styles](#overriding-icon-styles)
+<!--toc:end-->
+
 A plugin for [xplr][xplr] that introduces all the
-[nvim-web-devicons][nvim-web-devicons] with optional theming.
+[nvim-web-devicons][nvim-web-devicons] with theming included.
 
 ![Demo image](assets/demo.png)
 
@@ -28,34 +38,22 @@ Follow the [instructions from the docs][xplr-install].
 
 ## Features
 
-- Direct conversion of the original [nvim-web-devicons][nvim-web-devicons]:
-  Make [xplr][xplr] look more like [nvim-tree][nvim-tree]!
-- Optional icon styling included (See below)
+Direct conversion of the original [nvim-web-devicons][nvim-web-devicons]: Make
+[xplr][xplr] look more like [nvim-tree][nvim-tree]!
 
 
-## Enabling styled icons
+## Overriding icon styles
 
-The styling information for the icons is already embedded in this plugin and
-exposed for the various [xplr node (file) types][xplr-node-types] through the
-special "meta" table field.
-
-All you have to do is override your default [table
-renderer][xplr-table-renderer] like this (inside `init.lua`):
+Due to how the plugin is written, it is currently not possible to *only*
+override the icon style while maintaining the icon itself (and vice versa).
+You'll have to provide both the icon and the style in your config, like this:
 
 ```lua
-xplr.fn.custom.table_row_cols_1 = function(m)
-  return require("web-devicons").table_col_path(m)
-end
-
-xplr.config.general.table.row.cols = {
-  -- keep the other default columns intact
-  { format = "builtin.fmt_general_table_row_cols_0" }
-  { format = "custom.table_row_cols_1" }
-  { format = "builtin.fmt_general_table_row_cols_2" }
-  { format = "builtin.fmt_general_table_row_cols_3" }
-  { format = "builtin.fmt_general_table_row_cols_4" }
-}
+xplr.config.node_types.extension["lua"].meta.icon = xplr.util.paint("", { fg = { Indexed = 74 }})
 ```
+
+Refer to the [node types documentation][xplr-node-types] for additional
+information.
 
 
 [xplr]: https://xplr.dev/en/introduction
