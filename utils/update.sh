@@ -8,13 +8,14 @@ ORIGINAL_REPO="https://github.com/nvim-tree/nvim-web-devicons"
 # Directory where this script resides
 SCRIPTDIR="$(dirname "$(readlink -f "$0")")"
 # File to paste relevant parts of nvim-web-devicons to
-OUTPUT_FILE="$SCRIPTDIR/raw-devicons.lua"
+RAW_ICON_FILE="$SCRIPTDIR/raw-devicons.lua"
 
 function _append {
-    echo "$@" >> "$OUTPUT_FILE"
+    echo "$@" >> "$RAW_ICON_FILE"
 }
 
-rm -f "$OUTPUT_FILE"
+rm -f "$RAW_ICON_FILE"
+_append "-- this is an intermediary file and not used by the plugin itself"
 WORKDIR="$(mktemp -d)"
 pushd "$WORKDIR" &>/dev/null
 
@@ -39,3 +40,9 @@ done < nvim-web-devicons/lua/nvim-web-devicons.lua
 echo "converting icons to xplr-compatible format"
 popd &>/dev/null
 lua convert.lua
+
+echo "deleting intermediary files"
+rm -f "$RAW_ICON_FILE"
+
+echo "assembling final 'init.lua'"
+cat "$SCRIPTDIR/icons.lua" "$SCRIPTDIR/base.lua" > "$SCRIPTDIR/../init.lua"
