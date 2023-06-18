@@ -1621,10 +1621,21 @@ end
 
 local function setup(args)
     local xplr = xplr
+    local raw = require("utils.web-devicons")
 
-    register_by_type(xplr)
-    register_by_name(xplr)
-    register_by_extension(xplr)
+
+    for key, val in pairs(raw.extension_map) do
+        -- Don't overwrite users custom icons
+        if xplr.config.node_types.extension[key] == nil then
+            xplr.config.node_types.extension[key] = val
+        end
+    end
+
+    for key, val in pairs(raw.special_map) do
+        if xplr.config.node_types.special[key] == nil then
+            xplr.config.node_types.special[key] = val
+        end
+    end
 end
 
 -- Prints the 'path' column in the file table.
