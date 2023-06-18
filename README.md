@@ -4,7 +4,7 @@
 - [xplr web-devicons reimplementation](#xplr-web-devicons-reimplementation)
   - [Requirements](#requirements)
   - [Installation](#installation)
-    - [Install with [xpm][xpm]](#install-with-xpmxpm)
+    - [Install with xpm](#install-with-xpmxpm)
     - [Install manually](#install-manually)
   - [Features](#features)
   - [Overriding icon styles](#overriding-icon-styles)
