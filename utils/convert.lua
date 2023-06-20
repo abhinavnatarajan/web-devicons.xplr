@@ -23,18 +23,17 @@ end
 
 local function to_file(key, val, map_name)
     OUTFILE:write("" .. map_name .. "[\"" .. key .. "\"] = {\n")
-    OUTFILE:write("    meta = {\n")
+    OUTFILE:write("    meta = { ")
     if val.cterm_color == nil then
-        OUTFILE:write("        icon = \"" .. val.icon .. "\",\n")
+        OUTFILE:write("icon = \"" .. val.icon .. "\"")
     else
-        OUTFILE:write("        icon = xplr.util.paint(\""
+        OUTFILE:write("icon = xplr.util.paint(\""
             .. val.icon
             .. "\", { fg = { Indexed = "
             .. val.cterm_color
-            .. " }}),\n")
+            .. " }})")
     end
-    OUTFILE:write("    }\n")
-    OUTFILE:write("}\n")
+    OUTFILE:write(" }\n}\n")
 end
 
 for key, val in sorted_pairs(mod.by_name) do
