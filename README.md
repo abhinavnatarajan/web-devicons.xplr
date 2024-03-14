@@ -8,6 +8,7 @@
     - [Install manually](#install-manually)
   - [Features](#features)
   - [Overriding icon styles](#overriding-icon-styles)
+  - [Hacking](#hacking)
 <!--toc:end-->
 
 A plugin for [xplr][xplr] that introduces all the
@@ -54,6 +55,20 @@ xplr.config.node_types.extension["lua"].meta.icon = xplr.util.paint("", { fg 
 
 Refer to the [node types documentation][xplr-node-types] for additional
 information.
+
+
+## Hacking
+
+To build the plugin yourself locally (or to update the icon mappings), run the
+following commands:
+
+```bash
+$ cd utils/
+$ ./update.sh
+```
+
+If everything goes well, the script exits with a status of 0 and the `init.lua`
+in the repo root is updated.
 
 
 [xplr]: https://xplr.dev/en/introduction
