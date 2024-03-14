@@ -35,7 +35,7 @@ while read -r line; do
         _append "}"
         break
     fi
-done < nvim-web-devicons/lua/nvim-web-devicons.lua
+done < nvim-web-devicons/lua/nvim-web-devicons/icons-default.lua
 
 echo "converting icons to xplr-compatible format"
 popd &>/dev/null
