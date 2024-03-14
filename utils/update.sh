@@ -16,7 +16,7 @@ function _append {
 
 rm -f "$RAW_ICON_FILE"
 _append "-- this is an intermediary file and not used by the plugin itself"
-WORKDIR="$(mktemp -d)"
+WORKDIR="$(mktemp -d)" && echo "workdir: $WORKDIR"
 pushd "$WORKDIR" &>/dev/null
 
 echo "cloning '$ORIGINAL_REPO' ..."
