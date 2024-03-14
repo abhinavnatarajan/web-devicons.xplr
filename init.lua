@@ -17,8 +17,14 @@ special_map[".dockerignore"] = {
 special_map[".ds_store"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 239 }}) }
 }
+special_map[".editorconfig"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 255 }}) }
+}
 special_map[".env"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 227 }}) }
+}
+special_map[".eslintignore"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 56 }}) }
 }
 special_map[".eslintrc"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 56 }}) }
@@ -41,6 +47,9 @@ special_map[".gitmodules"] = {
 special_map[".gvimrc"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 28 }}) }
 }
+special_map[".luaurc"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 75 }}) }
+}
 special_map[".npmignore"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 197 }}) }
 }
@@ -62,11 +71,17 @@ special_map[".zshenv"] = {
 special_map[".zshrc"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 113 }}) }
 }
+special_map["R"] = {
+    meta = { icon = xplr.util.paint("󰟔", { fg = { Indexed = 25 }}) }
+}
 special_map["_gvimrc"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 28 }}) }
 }
 special_map["_vimrc"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 28 }}) }
+}
+special_map["avif"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 140 }}) }
 }
 special_map["brewfile"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 52 }}) }
@@ -74,11 +89,23 @@ special_map["brewfile"] = {
 special_map["build"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 113 }}) }
 }
+special_map["build.zig.zon"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 172 }}) }
+}
+special_map["checkhealth"] = {
+    meta = { icon = xplr.util.paint("󰓙", { fg = { Indexed = 75 }}) }
+}
 special_map["cmakelists.txt"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 66 }}) }
 }
 special_map["commit_editmsg"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 239 }}) }
+}
+special_map["compose.yaml"] = {
+    meta = { icon = xplr.util.paint("󰡨", { fg = { Indexed = 68 }}) }
+}
+special_map["compose.yml"] = {
+    meta = { icon = xplr.util.paint("󰡨", { fg = { Indexed = 68 }}) }
 }
 special_map["containerfile"] = {
     meta = { icon = xplr.util.paint("󰡨", { fg = { Indexed = 68 }}) }
@@ -107,6 +134,9 @@ special_map["gemfile$"] = {
 special_map["gnumakefile"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 66 }}) }
 }
+special_map["groovy"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 24 }}) }
+}
 special_map["gruntfile"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 166 }}) }
 }
@@ -126,22 +156,40 @@ special_map["node_modules"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 197 }}) }
 }
 special_map["package-lock.json"] = {
-    meta = { icon = "" }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 52 }}) }
 }
 special_map["package.json"] = {
-    meta = { icon = "" }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 197 }}) }
 }
 special_map["procfile"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 140 }}) }
 }
+special_map["py.typed"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 214 }}) }
+}
 special_map["r"] = {
-    meta = { icon = xplr.util.paint("󰟔", { fg = { Indexed = 29 }}) }
+    meta = { icon = xplr.util.paint("󰟔", { fg = { Indexed = 25 }}) }
 }
 special_map["rakefile"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 52 }}) }
 }
 special_map["rmd"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
+}
+special_map["svelte.config.js"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 196 }}) }
+}
+special_map["tailwind.config.js"] = {
+    meta = { icon = xplr.util.paint("󱏿", { fg = { Indexed = 45 }}) }
+}
+special_map["tailwind.config.mjs"] = {
+    meta = { icon = xplr.util.paint("󱏿", { fg = { Indexed = 45 }}) }
+}
+special_map["tailwind.config.ts"] = {
+    meta = { icon = xplr.util.paint("󱏿", { fg = { Indexed = 45 }}) }
+}
+special_map["tsconfig.json"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
 }
 special_map["unlicense"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
@@ -155,11 +203,32 @@ special_map["webpack"] = {
 special_map["workspace"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 113 }}) }
 }
+extension_map["Dockerfile"] = {
+    meta = { icon = xplr.util.paint("󰡨", { fg = { Indexed = 68 }}) }
+}
+extension_map["R"] = {
+    meta = { icon = xplr.util.paint("󰟔", { fg = { Indexed = 25 }}) }
+}
+extension_map["aac"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 45 }}) }
+}
 extension_map["ai"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
 }
+extension_map["app"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 124 }}) }
+}
+extension_map["applescript"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 66 }}) }
+}
 extension_map["awk"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 240 }}) }
+}
+extension_map["azcli"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 32 }}) }
+}
+extension_map["bak"] = {
+    meta = { icon = xplr.util.paint("󰁯", { fg = { Indexed = 66 }}) }
 }
 extension_map["bash"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 113 }}) }
@@ -169,6 +238,9 @@ extension_map["bat"] = {
 }
 extension_map["bazel"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 113 }}) }
+}
+extension_map["bib"] = {
+    meta = { icon = xplr.util.paint("󱉟", { fg = { Indexed = 185 }}) }
 }
 extension_map["bmp"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 140 }}) }
@@ -188,11 +260,14 @@ extension_map["cbl"] = {
 extension_map["cc"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 204 }}) }
 }
+extension_map["ccm"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 204 }}) }
+}
 extension_map["cfg"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 255 }}) }
 }
 extension_map["cjs"] = {
-    meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
+    meta = { icon = xplr.util.paint("󰌞", { fg = { Indexed = 227 }}) }
 }
 extension_map["clj"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 113 }}) }
@@ -230,6 +305,9 @@ extension_map["cp"] = {
 extension_map["cpp"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
 }
+extension_map["cppm"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
+}
 extension_map["cpy"] = {
     meta = { icon = xplr.util.paint("⚙", { fg = { Indexed = 25 }}) }
 }
@@ -242,16 +320,34 @@ extension_map["cs"] = {
 extension_map["csh"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 240 }}) }
 }
+extension_map["cshtml"] = {
+    meta = { icon = xplr.util.paint("󱦗", { fg = { Indexed = 56 }}) }
+}
 extension_map["cson"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
+}
+extension_map["csproj"] = {
+    meta = { icon = xplr.util.paint("󰪮", { fg = { Indexed = 56 }}) }
 }
 extension_map["css"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 75 }}) }
 }
 extension_map["csv"] = {
-    meta = { icon = xplr.util.paint("󰈙", { fg = { Indexed = 113 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 113 }}) }
+}
+extension_map["cts"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
+}
+extension_map["cu"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 113 }}) }
+}
+extension_map["cuh"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 140 }}) }
 }
 extension_map["cxx"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
+}
+extension_map["cxxm"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
 }
 extension_map["d"] = {
@@ -293,20 +389,29 @@ extension_map["eex"] = {
 extension_map["ejs"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
 }
+extension_map["elf"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 124 }}) }
+}
 extension_map["elm"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
 }
+extension_map["eot"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 255 }}) }
+}
 extension_map["epp"] = {
-    meta = { icon = "" }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 214 }}) }
 }
 extension_map["erb"] = {
-    meta = { icon = xplr.util.paint("", { fg = { Indexed = 214 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 52 }}) }
 }
 extension_map["erl"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 163 }}) }
 }
 extension_map["ex"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 140 }}) }
+}
+extension_map["exe"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 124 }}) }
 }
 extension_map["exs"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 140 }}) }
@@ -320,8 +425,11 @@ extension_map["f90"] = {
 extension_map["fish"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 240 }}) }
 }
+extension_map["flac"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 45 }}) }
+}
 extension_map["fnl"] = {
-    meta = { icon = xplr.util.paint("🌜", { fg = { Indexed = 230 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 230 }}) }
 }
 extension_map["fs"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
@@ -395,6 +503,15 @@ extension_map["htm"] = {
 extension_map["html"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 196 }}) }
 }
+extension_map["huff"] = {
+    meta = { icon = xplr.util.paint("󰡘", { fg = { Indexed = 56 }}) }
+}
+extension_map["hurl"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 198 }}) }
+}
+extension_map["hx"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 208 }}) }
+}
 extension_map["hxx"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 140 }}) }
 }
@@ -406,6 +523,15 @@ extension_map["import"] = {
 }
 extension_map["ini"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 66 }}) }
+}
+extension_map["ino"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 73 }}) }
+}
+extension_map["ipynb"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
+}
+extension_map["ixx"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
 }
 extension_map["java"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 167 }}) }
@@ -420,7 +546,7 @@ extension_map["jpg"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 140 }}) }
 }
 extension_map["js"] = {
-    meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
+    meta = { icon = xplr.util.paint("󰌞", { fg = { Indexed = 227 }}) }
 }
 extension_map["json"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
@@ -428,8 +554,14 @@ extension_map["json"] = {
 extension_map["json5"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
 }
+extension_map["jsonc"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
+}
 extension_map["jsx"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 45 }}) }
+}
+extension_map["jxl"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 140 }}) }
 }
 extension_map["ksh"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 240 }}) }
@@ -459,25 +591,31 @@ extension_map["lock"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 250 }}) }
 }
 extension_map["log"] = {
-    meta = { icon = xplr.util.paint("󰌱", { fg = { Indexed = 231 }}) }
+    meta = { icon = xplr.util.paint("󰌱", { fg = { Indexed = 253 }}) }
 }
 extension_map["lua"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
 }
 extension_map["luau"] = {
-    meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 75 }}) }
+}
+extension_map["m4a"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 45 }}) }
+}
+extension_map["m4v"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 208 }}) }
 }
 extension_map["makefile"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 66 }}) }
 }
 extension_map["markdown"] = {
-    meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 253 }}) }
 }
 extension_map["material"] = {
     meta = { icon = xplr.util.paint("󰔉", { fg = { Indexed = 163 }}) }
 }
 extension_map["md"] = {
-    meta = { icon = xplr.util.paint("", { fg = { Indexed = 231 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 253 }}) }
 }
 extension_map["mdx"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
@@ -486,19 +624,37 @@ extension_map["mint"] = {
     meta = { icon = xplr.util.paint("󰌪", { fg = { Indexed = 108 }}) }
 }
 extension_map["mjs"] = {
-    meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
+    meta = { icon = xplr.util.paint("󰌞", { fg = { Indexed = 227 }}) }
 }
 extension_map["mk"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 66 }}) }
 }
+extension_map["mkv"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 208 }}) }
+}
 extension_map["ml"] = {
-    meta = { icon = xplr.util.paint("λ", { fg = { Indexed = 166 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 166 }}) }
 }
 extension_map["mli"] = {
-    meta = { icon = xplr.util.paint("λ", { fg = { Indexed = 166 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 166 }}) }
 }
 extension_map["mo"] = {
     meta = { icon = xplr.util.paint("∞", { fg = { Indexed = 135 }}) }
+}
+extension_map["mov"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 208 }}) }
+}
+extension_map["mp3"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 45 }}) }
+}
+extension_map["mp4"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 208 }}) }
+}
+extension_map["mpp"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
+}
+extension_map["mts"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
 }
 extension_map["mustache"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 166 }}) }
@@ -509,6 +665,15 @@ extension_map["nim"] = {
 extension_map["nix"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 110 }}) }
 }
+extension_map["nswag"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 112 }}) }
+}
+extension_map["nu"] = {
+    meta = { icon = xplr.util.paint(">", { fg = { Indexed = 36 }}) }
+}
+extension_map["ogg"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 45 }}) }
+}
 extension_map["opus"] = {
     meta = { icon = xplr.util.paint("󰈣", { fg = { Indexed = 208 }}) }
 }
@@ -517,6 +682,9 @@ extension_map["org"] = {
 }
 extension_map["otf"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 255 }}) }
+}
+extension_map["out"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 124 }}) }
 }
 extension_map["pck"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 66 }}) }
@@ -537,13 +705,13 @@ extension_map["png"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 140 }}) }
 }
 extension_map["pp"] = {
-    meta = { icon = "" }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 214 }}) }
 }
 extension_map["ppt"] = {
-    meta = { icon = xplr.util.paint("󰈧", { fg = { Indexed = 214 }}) }
+    meta = { icon = xplr.util.paint("󰈧", { fg = { Indexed = 160 }}) }
 }
 extension_map["prisma"] = {
-    meta = { icon = xplr.util.paint("󰔶", { fg = { Indexed = 231 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 62 }}) }
 }
 extension_map["pro"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 179 }}) }
@@ -563,6 +731,12 @@ extension_map["psd1"] = {
 extension_map["psm1"] = {
     meta = { icon = xplr.util.paint("󰨊", { fg = { Indexed = 68 }}) }
 }
+extension_map["pxd"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 39 }}) }
+}
+extension_map["pxi"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 39 }}) }
+}
 extension_map["py"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 214 }}) }
 }
@@ -572,17 +746,26 @@ extension_map["pyc"] = {
 extension_map["pyd"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 222 }}) }
 }
+extension_map["pyi"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 214 }}) }
+}
 extension_map["pyo"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 222 }}) }
+}
+extension_map["pyx"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 39 }}) }
 }
 extension_map["query"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 107 }}) }
 }
 extension_map["r"] = {
-    meta = { icon = xplr.util.paint("󰟔", { fg = { Indexed = 29 }}) }
+    meta = { icon = xplr.util.paint("󰟔", { fg = { Indexed = 25 }}) }
 }
 extension_map["rake"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 52 }}) }
+}
+extension_map["razor"] = {
+    meta = { icon = xplr.util.paint("󱦘", { fg = { Indexed = 56 }}) }
 }
 extension_map["rb"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 52 }}) }
@@ -614,11 +797,14 @@ extension_map["sass"] = {
 extension_map["sbt"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 167 }}) }
 }
+extension_map["scad"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 226 }}) }
+}
 extension_map["scala"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 167 }}) }
 }
 extension_map["scm"] = {
-    meta = { icon = xplr.util.paint("󰘧", { fg = { Indexed = 16 }}) }
+    meta = { icon = xplr.util.paint("󰘧", { fg = { Indexed = 255 }}) }
 }
 extension_map["scss"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 204 }}) }
@@ -639,7 +825,7 @@ extension_map["sml"] = {
     meta = { icon = xplr.util.paint("λ", { fg = { Indexed = 166 }}) }
 }
 extension_map["sol"] = {
-    meta = { icon = xplr.util.paint("󰞻", { fg = { Indexed = 74 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 74 }}) }
 }
 extension_map["spec.js"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
@@ -695,6 +881,9 @@ extension_map["tbc"] = {
 extension_map["tcl"] = {
     meta = { icon = xplr.util.paint("󰛓", { fg = { Indexed = 25 }}) }
 }
+extension_map["templ"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 178 }}) }
+}
 extension_map["terminal"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 34 }}) }
 }
@@ -714,13 +903,13 @@ extension_map["tex"] = {
     meta = { icon = xplr.util.paint("󰙩", { fg = { Indexed = 22 }}) }
 }
 extension_map["tf"] = {
-    meta = { icon = xplr.util.paint("", { fg = { Indexed = 93 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 93 }}) }
 }
 extension_map["tfvars"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 93 }}) }
 }
 extension_map["toml"] = {
-    meta = { icon = xplr.util.paint("", { fg = { Indexed = 66 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 124 }}) }
 }
 extension_map["tres"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
@@ -733,6 +922,9 @@ extension_map["tscn"] = {
 }
 extension_map["tsx"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 26 }}) }
+}
+extension_map["ttf"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 255 }}) }
 }
 extension_map["twig"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 113 }}) }
@@ -758,11 +950,20 @@ extension_map["vhdl"] = {
 extension_map["vim"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 28 }}) }
 }
+extension_map["vsh"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 67 }}) }
+}
 extension_map["vue"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 113 }}) }
 }
 extension_map["wasm"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 62 }}) }
+}
+extension_map["wav"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 45 }}) }
+}
+extension_map["webm"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 208 }}) }
 }
 extension_map["webmanifest"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 185 }}) }
@@ -772,6 +973,15 @@ extension_map["webp"] = {
 }
 extension_map["webpack"] = {
     meta = { icon = xplr.util.paint("󰜫", { fg = { Indexed = 74 }}) }
+}
+extension_map["woff"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 255 }}) }
+}
+extension_map["woff2"] = {
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 255 }}) }
+}
+extension_map["xaml"] = {
+    meta = { icon = xplr.util.paint("󰙳", { fg = { Indexed = 56 }}) }
 }
 extension_map["xcplayground"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 166 }}) }
@@ -795,7 +1005,7 @@ extension_map["yml"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 66 }}) }
 }
 extension_map["zig"] = {
-    meta = { icon = xplr.util.paint("", { fg = { Indexed = 172 }}) }
+    meta = { icon = xplr.util.paint("", { fg = { Indexed = 172 }}) }
 }
 extension_map["zsh"] = {
     meta = { icon = xplr.util.paint("", { fg = { Indexed = 113 }}) }
