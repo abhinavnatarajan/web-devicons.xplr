@@ -6,15 +6,15 @@ local function setup(args)
 
     for key, val in pairs(extension_map) do
         -- Don't overwrite users custom icons
-        if xplr.config.node_types.extension[key] == nil then
-            xplr.config.node_types.extension[key] = val
+        if xplr.config.node_types.extension.meta.icon == nil then
+            xplr.config.node_types.extension.meta.icon = val
         end
     end
 
     for key, val in pairs(special_map) do
         -- Don't overwrite users custom icons
-        if xplr.config.node_types.special[key] == nil then
-            xplr.config.node_types.special[key] = val
+        if xplr.config.node_types.special.meta.icon == nil then
+            xplr.config.node_types.special.meta.icon = val
         end
     end
 end

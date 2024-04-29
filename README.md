@@ -13,6 +13,7 @@
 
 A plugin for [xplr][xplr] that introduces all the
 [nvim-web-devicons][nvim-web-devicons] with theming included.
+Fork of [web-devicons.xplr][web-devicons.xplr].
 
 ![Demo image](assets/demo.png)
 
@@ -78,3 +79,4 @@ in the repo root is updated.
 [nvim-web-devicons]: https://github.com/nvim-tree/nvim-web-devicons
 [nvim-tree]: https://github.com/nvim-tree/nvim-tree.lua
 [xpm]: https://github.com/dtomvan/xpm.xplr
+[web-devicons.xplr]: https://gitlab.com/hartan/web-devicons.xplr
