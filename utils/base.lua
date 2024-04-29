@@ -1,3 +1,5 @@
+-- Modified from original
+
 -- static plugin configuration/code
 -- This is appended to the contents of `icons.lua` to generate the final
 -- `init.lua` in the repo root.
